@@ -28,13 +28,13 @@
     <header class="grid-header">
       <nav>
           <ul class="return">
-              <li><a href="../index.html" id="inicio">Inicio</a></li>
+              <li class="return"><a href="../index.html" id="inicio">Inicio</a></li>
           </ul>
 
           <ul class="newsBtn">
-              <li><a href="./pages/news-1.html">Noticia I</a></li>
-              <li><a href="">Noticia II</a></li>
-              <li><a href="">Noticia III</a></li>
+              <li class="newsBtn"><a href="./pages/news-1.html">Noticia I</a></li>
+              <li class="newsBtn"><a href="">Noticia II</a></li>
+              <li class="newsBtn"><a href="">Noticia III</a></li>
           </ul>
 
           <ul class="settings">
@@ -75,14 +75,15 @@
               </div>
 
             <ul class="other-buttons">
-              <li class="tesis"><a href=""><img src="svg/file-text.svg" alt="imagen vectorial de una hoja escrita"></a><a>Tesis</a></li>
-              <li class="licencias"><a href=""><img src="svg/folder.svg" alt="imagen vectorial de una carpeta"></a><a>Licencias</a></li>
-              <li class="contacto"><a href=""><img src="svg/mail.svg" alt="imagen vectorial de un sobre de papel"></a><a href="#form">Contacto</a></li>
+              <li class="tesis"><a href=""><img src="svg/file-text.svg" alt="imagen vectorial de una hoja escrita"></a><a href="">Tesis</a></li>
+              <li class="licencias"><a href=""><img src="svg/folder.svg" alt="imagen vectorial de una carpeta"></a><a href="">Licencias</a></li>
+              <li class="contacto"><a href="#form"><img src="svg/mail.svg" alt="imagen vectorial de un sobre de papel"></a><a href="#form">Contacto</a></li>
             </ul>
       </section>
     </main>
-<!--
-    <section id="form">
+    
+    <details id="form">
+      <summary>Contacto</summary>
       <form action="/my-handling-form-page" method="post">
         <fieldset>
           <legend><strong>Contacto</strong></legend>
@@ -115,8 +116,8 @@
             </div>
         </fieldset>
       </form>
-    </section>
-    -->
+    </details>
+    
   </div>
 </body>
     <footer class="grid-footer">

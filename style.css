@@ -120,7 +120,9 @@ nav {
 }
 
 img {
-  padding: 10px;
+  padding: 5px;
+  height: 36px;
+  width: auto;
 }
 
 .newsBtn {
@@ -132,14 +134,14 @@ img {
 .settings {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   gap: 2rem;
 }
 
 .return {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 [data-title="abstract"] {
@@ -152,12 +154,19 @@ img {
   align-items: center;
 }
 
-.other-buttons {
+.other-buttons,
+.other-buttons a:visited {
   display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 2rem;
   text-align: center;
+  margin: 2rem 0 2rem 0;
+  color: var(--primary-clr);
+}
+
+.other-buttons a:hover {
+  color: var(--secondary-clr);
 }
 
 .tesis, 
@@ -167,6 +176,19 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 97px;
+  width: 95px;
+  padding: 1rem;
+}
+
+.tesis {
+
+}
+
+.tesis:hover, 
+.licencias:hover,
+.contacto:hover {
+  background-color: #83988a;
 }
 
 /* layout end */
@@ -188,6 +210,7 @@ main,
 
 ul {
   list-style-type: none;
+  padding: 0;
 }
 
 a:link,
