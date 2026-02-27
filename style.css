@@ -80,16 +80,6 @@ html {
   row-gap: 4rem;
 }
 
-.container-pages {
-  display: grid;
-  grid-template-areas: 
-    "header"
-    "project"
-    "footer";
-    justify-items: center;
-    row-gap: 2rem;
-}
-
 .grid-header {
   grid-area: header;
   width: 100vw;
@@ -183,6 +173,29 @@ img {
   height: 97px;
   width: 95px;
   padding: 1rem;
+}
+ /*****************/
+.container-pages {
+  display: grid;
+  grid-template-areas: 
+    "header"
+    "project"
+    "footer";
+    justify-items: center;
+    row-gap: 2rem;
+}
+
+div.voice,
+div.ambient,
+div.music {
+  display: flex;
+  align-items: center;
+}
+
+.nameTag {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 /* layout end */
@@ -296,10 +309,10 @@ p {
 
 .nameTag {
   background-color: #8BAEC3;
-  border-radius: 1rem 1rem 0 0;
-  margin-bottom: 1rem;
+  border-radius: 1rem 0 0 1rem;
   padding: 0.5rem;
   font-size: 1.2rem;
+  width: 250px;
 }
 
 /*volume sliders*/
@@ -317,7 +330,6 @@ input[type="range"] {
   background-color: #B3C9D6;
   border-radius: 1rem;
   margin: 1rem;
-  padding-bottom: 1rem;
 }
 
 .voz,
