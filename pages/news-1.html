@@ -52,10 +52,10 @@
 
                 <div class="voice">
                     <div class="nameTag">
-                        <p>Locuciones</p>
+                        <p class="tag">Locuciones</p>
                         <label for="volume-voice"></label>
                         <input type="range" id="volume-voice" name="volume" min="-60" max="24" value="0" step="3" oninput="this.nextElementSibling.value = this.value">
-                        <output>0 dB</output>
+                        <output class="dB">0 dB</output>
                     </div>
 
                     <div class="controls">
@@ -65,10 +65,10 @@
 
                 <div class="ambient">
                     <div class="nameTag">
-                        <p>Paisaje sonoro</p>
+                        <p class="tag">Paisaje sonoro</p>
                         <label for="volume-ambient"></label>
                         <input type="range" id="volume-ambient" name="volume" min="-60" max="24" value="0" step="3" oninput="this.nextElementSibling.value = this.value">
-                        <output>0 dB</output>
+                        <output class="dB">0 dB</output>
                     </div>
 
                     <div class="controls">
@@ -78,10 +78,10 @@
 
                 <div class="music">
                     <div class="nameTag">
-                        <p>Música</p>
+                        <p class="tag">Música</p>
                         <label for="volume-music"></label>
                         <input type="range" id="volume-music" name="volume" min="-60" max="24" value="0" step="3" oninput="this.nextElementSibling.value = this.value">
-                        <output>0 dB</output>
+                        <output class="dB">0 dB</output>
                     </div>
 
                     <div class="controls">
@@ -90,9 +90,7 @@
                     </div>
                 </div>
 
-            <ul>
-                <li><a href=""><img src="../svg/folder.svg" alt="imagen vectorial de una carpeta"></a><a>Licencias</a></li>
-            </ul>
+                <p class="licencias"><a href=""><img src="../svg/folder.svg" alt="imagen vectorial de una carpeta"></a><a href="" class="licencias-pag">Licencias</a></p>
         </section>
     </main>
 
