@@ -48,7 +48,7 @@
             <h1>Proyecto I</h1>
                 <div class="videoContainer">
                   <video autoplay loop>
-                    <source src="../videos/VIDEO_protesta_jubilados.mp4" />
+                    <source src="../../videos/VIDEO_protesta_jubilados.mp4" />
                   </video>
                 </div>
 
@@ -61,9 +61,9 @@
                     </div>
 
                     <div class="controls">
-                        <button onclick="muteLocucion2()" id="locucion1Button" class="voz">1</button> <button class="voz">2</button>
-                        <audio id="locucion-1" autoplay style="visibility:hidden" src="../music/Voz en off STG_01.wav" />
-                        <audio id="locucion-2" autoplay style="visibility:hidden" src="../music/Voz en Off 2.mp3" />
+                        <button onclick="muteLocucion1()" id="locucion1Button" class="voz">1</button> <button onclick="muteLocucion2()" id="locucion2Button" class="voz">2</button>
+                        <audio id="locucion-1" autoplay style="visibility:hidden" src="../../videos/locución_01_EFE.wav" />
+                        <audio id="locucion-2" autoplay muted style="visibility:hidden" src="../../videos/locución_02_C5N.wav" />
                     </div>
                 </div>
 
@@ -103,13 +103,23 @@
     </footer>
     <script>
       let locucion2muted = document.getElementById('locucion-2').muted
+      let locucion1muted = document.getElementById('locucion-1').muted
+
+      document.getElementById("locucion1Button").style = locucion2muted ? "background-color:green" : "";
+      document.getElementById("locucion2Button").style = locucion1muted ? "background-color:green" : "";
+
       function muteLocucion2() {
         document.getElementById("locucion-2").muted = locucion2muted = !locucion2muted;
-        document.getElementById("locucion1Button").style = locucion2muted ? "background-color:green" : "#B3C9D6";
+        document.getElementById("locucion2Button").style = !locucion2muted ? "background-color:green" : "";
+      } 
+      function muteLocucion1() {
+        document.getElementById("locucion-1").muted = locucion1muted = !locucion1muted;
+        document.getElementById("locucion1Button").style = !locucion1muted ? "background-color:green" : "";
       } 
 
       let voces1Player = document.getElementById("locucion-2")
       let voces2Player = document.getElementById("locucion-1")
+
       function normalizeVolume(value) {
         const min = -60
         const max = 24
